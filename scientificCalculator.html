@@ -1,0 +1,53 @@
+<template>
+    <div class="calculator">
+        <lightning-input type="text" label="Result" value={result} disabled></lightning-input>
+
+        <div class="buttons">
+            <div class="button-row">
+            <lightning-button-group>
+                <lightning-button label="7" onclick={handleButtonClick}></lightning-button>
+                <lightning-button label="8" onclick={handleButtonClick}></lightning-button>
+                <lightning-button label="9" onclick={handleButtonClick}></lightning-button>
+                <lightning-button label="/" onclick={handleButtonClick}></lightning-button>
+            </lightning-button-group>
+            </div>
+
+            <div class="button-row">
+            <lightning-button-group>
+                <lightning-button label="4" onclick={handleButtonClick}></lightning-button>
+                <lightning-button label="5" onclick={handleButtonClick}></lightning-button>
+                <lightning-button label="6" onclick={handleButtonClick}></lightning-button>
+                <lightning-button label="-" onclick={handleButtonClick}></lightning-button>
+            </lightning-button-group>
+            </div>
+
+            <div class="button-row">
+            <lightning-button-group>
+                <lightning-button label="1" onclick={handleButtonClick}></lightning-button>
+                <lightning-button label="2" onclick={handleButtonClick}></lightning-button>
+                <lightning-button label="3" onclick={handleButtonClick}></lightning-button>
+                <lightning-button label="+" onclick={handleButtonClick}></lightning-button>
+            </lightning-button-group>
+            </div>
+
+            <div class="button-row">
+            <lightning-button-group>
+                <lightning-button label="0" onclick={handleButtonClick}></lightning-button>
+                <lightning-button label="." onclick={handleButtonClick}></lightning-button>
+                <lightning-button label="C" onclick={clearResult}></lightning-button>
+                <lightning-button label="=" onclick={calculateResult}></lightning-button>
+            </lightning-button-group>
+            </div>
+
+
+            <div class="button-row">
+            <lightning-button-group>
+                <lightning-button label="sin" onclick={handleTrigFunction}></lightning-button>
+                <lightning-button label="cos" onclick={handleTrigFunction}></lightning-button>
+                <lightning-button label="tan" onclick={handleTrigFunction}></lightning-button>
+                <lightning-button label="^" onclick={handleButtonClick}></lightning-button>
+            </lightning-button-group>
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,62 @@
+.calculator {
+    max-width: 400px;
+    margin: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.lightning-input {
+    margin-bottom: 16px;
+    font-size: 1.5em;
+    text-align: right;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.lightning-button {
+    font-size: 1.2em;
+    padding: 15px;
+    flex: 1;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.lightning-button:hover {
+    background-color: #ccc;
+}
+
+/* Optional: Add styling for different button types */
+.lightning-button[onclick*=handleTrigFunction] {
+    background-color: #4caf50; /* Green */
+    color: white;
+}
+
+.lightning-button[onclick*=handleButtonClick] {
+    background-color: #008CBA; /* Blue */
+    color: white;
+}
+
+.lightning-button[onclick*=clearResult] {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+.lightning-button[onclick*=calculateResult] {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
